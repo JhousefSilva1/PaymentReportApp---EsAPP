@@ -4,21 +4,28 @@ using PaymentApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Base de datos en memoria (simple para pruebas)
+// Conexión a PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseInMemoryDatabase("PaymentsDb"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Servicio de negocio
+// Servicios
 builder.Services.AddScoped<PaymentService>();
 
 // Controladores
 builder.Services.AddControllers();
 
-// Swagger clásico (.NET 8)
+// Swagger (.NET 8)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+// Migrar automáticamente la base de datos (opcional, para desarrollo)
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
+}
 
 if (app.Environment.IsDevelopment())
 {

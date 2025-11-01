@@ -1,30 +1,59 @@
-# Visual Studio
+# ---------------------------------------------------------
+# VISUAL STUDIO / VS CODE / RIDER
+# ---------------------------------------------------------
 .vs/
-*.user
+.vscode/
+.idea/
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
-# Build results
+# ---------------------------------------------------------
+# BUILD RESULTS
+# ---------------------------------------------------------
 [Bb]in/
 [Oo]bj/
 [Ll]og/
 TestResults/
 out/
+artifacts/
 
-# IDEs
-.idea/
-.vscode/
+# ---------------------------------------------------------
+# ENTITY FRAMEWORK & DATABASE FILES
+# ---------------------------------------------------------
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+Migrations/
 
-# .NET
+# ---------------------------------------------------------
+# DOTNET
+# ---------------------------------------------------------
 project.lock.json
 project.fragment.lock.json
-artifacts/
-*.dbmdl
 *.pdb
 *.tmp
-
-# Others
 *.cache
 *.log
 *.vsidx
+
+# ---------------------------------------------------------
+# DOCKER
+# ---------------------------------------------------------
+docker-compose.override.yml
+docker-compose.debug.yml
+docker-compose.release.yml
+.docker/
+**/Dockerfile*
+**/.dockerignore
+
+# ---------------------------------------------------------
+# SYSTEM FILES
+# ---------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

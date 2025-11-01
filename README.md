@@ -31,3 +31,6 @@ Este proyecto forma parte de una prueba técnica y está construido con buenas p
   
    git clone https://github.com/JhousefSilva1/PaymentReportApp---EsAPP
    cd PaymentApi
+1. Ingresar a este link para ver la documentaci�n e interactuar con la API:
+1. http://localhost:5239/swagger/index.html
+1. 
