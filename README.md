@@ -1,14 +1,14 @@
 #  Payment API
 
-API REST desarrollada en **.NET 8** para el registro y consulta de pagos de servicios b·sicos (agua, electricidad, telecomunicaciones).  
-Este proyecto forma parte de una prueba tÈcnica y est· construido con buenas pr·cticas de arquitectura y validaciones de negocio.
+API REST desarrollada en **.NET 8** para el registro y consulta de pagos de servicios b√°sicos (agua, electricidad, telecomunicaciones).  
+Este proyecto forma parte de una prueba t√©cnica y est√° construido con buenas pr√°cticas de arquitectura y validaciones de negocio.
 
 ---
 
-##  TecnologÌas Utilizadas
+##  Tecnolog√≠as Utilizadas
 - **.NET 8 (ASP.NET Core Web API)**
 - **Entity Framework Core (InMemory)**
-- **Swagger / OpenAPI** (para documentaciÛn interactiva)
+- **Swagger / OpenAPI** (para documentaci√≥n interactiva)
 - **Visual Studio 2022 / VS Code / Visual Studio 2022 2026
 
 ---
@@ -21,13 +21,13 @@ Este proyecto forma parte de una prueba tÈcnica y est· construido con buenas pr·
 ---
 
 ## Archvo global.json
-- Este archivo asegura que el proyecto utilice la versiÛn especÌfica del SDK de .NET 8.0.415
-- Si tienes m˙ltiples versiones del SDK instaladas, este archivo ayuda a evitar conflictos y garantiza que el proyecto se ejecute con la versiÛn correcta.
+- Este archivo asegura que el proyecto utilice la versi√≥n espec√≠fica del SDK de .NET 8.0.415
+- Si tienes m√∫ltiples versiones del SDK instaladas, este archivo ayuda a evitar conflictos y garantiza que el proyecto se ejecute con la versi√≥n correcta.
 - 
 
-##  InstalaciÛn y EjecuciÛn
+##  Instalaci√≥n y Ejecuci√≥n
 
 1. **Clonar el repositorio:**
   
-   git clone https://github.com/JhousefSilva1/PaymentReportApp
+   git clone https://github.com/JhousefSilva1/PaymentReportApp---EsAPP
    cd PaymentApi
